@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "OLAPCube", "OLAPCube\OLAPCube.dwproj", "{0E49A964-5DA6-47ED-8F37-206C9ADFA6B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E49A964-5DA6-47ED-8F37-206C9ADFA6B9}.Development|Default.ActiveCfg = Development
+		{0E49A964-5DA6-47ED-8F37-206C9ADFA6B9}.Development|Default.Build.0 = Development
+		{0E49A964-5DA6-47ED-8F37-206C9ADFA6B9}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {85950B6B-9751-424F-945A-488C092BEB85}
+	EndGlobalSection
+EndGlobal

@@ -6,10 +6,75 @@
     <Name>OLAPCube.database</Name>
     <FullPath>OLAPCube.database</FullPath>
   </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>Sales DW.cube</Name>
+      <FullPath>Sales DW.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Sales DW.partitions</Name>
+          <FullPath>Sales DW.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
+  <Dimensions>
+    <ProjectItem>
+      <Name>Dim Customer.dim</Name>
+      <FullPath>Dim Customer.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Product.dim</Name>
+      <FullPath>Dim Product.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Date.dim</Name>
+      <FullPath>Dim Date.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Sales Person.dim</Name>
+      <FullPath>Dim Sales Person.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Stores.dim</Name>
+      <FullPath>Dim Stores.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Time.dim</Name>
+      <FullPath>Dim Time.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
+  <DataSources>
+    <ProjectItem>
+      <Name>Sales DW.ds</Name>
+      <FullPath>Sales DW.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>Sales DW.dsv</Name>
+      <FullPath>Sales DW.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
   <Configurations>
     <Configuration>
       <Name>Development</Name>
-      <Options />
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>Sales DW</Id>
+            <Name>Sales DW</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=LENOVO-PC\SIENMICH;Password=;User ID=;Initial Catalog=Sales_DW</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>Sales DW</Id>
+            <Name>Sales DW</Name>
+            <Value xsi:type="xsd:int">1</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+      </Options>
     </Configuration>
   </Configurations>
 </Project>
